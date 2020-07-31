@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./images/logo-white.png";
+import Nat1 from "./images/nat-1-large.jpg";
+import Nat2 from "./images/nat-2-large.jpg";
+import Nat3 from "./images/nat-3-large.jpg";
 
 export default function natour() {
   return (
@@ -95,24 +98,21 @@ export default function natour() {
             </div>
             <div className="col-1-of-2">
               <div className="composition">
-                {/* <img
-                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 1"
+                <img
+                  src={Nat1}
+                  alt="composition 1"
                   className="composition__photo composition__photo--p1"
-                  src="/static/images/nat-1-large.jpg"
                 />
                 <img
-                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 2"
+                  alt="composition 2"
                   className="composition__photo composition__photo--p2"
-                  src="/static/images/nat-2-large.jpg"
+                  src={Nat2}
                 />
                 <img
-                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 3"
+                  alt="composition 3"
                   className="composition__photo composition__photo--p3"
-                  src="/static/images/nat-3-large.jpg"
-                /> */}
+                  src={Nat3}
+                />
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function natour() {
             <div className="col-1-of-4">
               <div className="feature-box">
                 <svg className="feature-box__icon ">
-                  <use xlinkHref="/static/images/sprite.svg#icon-global"></use>
+                  <use xlinkHref="./images/sprite.svg#icon-global"></use>
                 </svg>
                 <h3 className="heading-tertiary u-margin-bottom-small">
                   Explore the world
@@ -137,7 +137,7 @@ export default function natour() {
             <div className="col-1-of-4">
               <div className="feature-box">
                 <svg className="feature-box__icon ">
-                  <use xlinkHref="/static/images/sprite.svg#icon-map-pin"></use>
+                  <use xlinkHref="./images/sprite.svg#icon-map-pin"></use>
                 </svg>
                 <h3 className="heading-tertiary u-margin-bottom-small">
                   Meet nature
@@ -152,7 +152,7 @@ export default function natour() {
             <div className="col-1-of-4">
               <div className="feature-box">
                 <svg className="feature-box__icon">
-                  <use xlinkHref="/static/images/sprite.svg#icon-presentation"></use>
+                  <use xlinkHref="./images/sprite.svg#icon-presentation"></use>
                 </svg>
                 <h3 className="heading-tertiary u-margin-bottom-small">
                   Find your way
@@ -167,7 +167,7 @@ export default function natour() {
             <div className="col-1-of-4">
               <div className="feature-box">
                 <svg className="feature-box__icon">
-                  <use xlinkHref="/static/images/sprite.svg#icon-heart"></use>
+                  <use xlinkHref="./images/sprite.svg#icon-heart"></use>
                 </svg>
                 <h3 className="heading-tertiary u-margin-bottom-small">
                   Live a healthier life
@@ -302,13 +302,13 @@ export default function natour() {
           <div className="bg-video-nat">
             <video
               className="bg-video-nat__content"
-              // style={{ opacity: 0.31 }}
+              style={{ opacity: 0.91 }}
               autoPlay
               muted
               loop
             >
-              <source src="/static/vid/video.mp4" type="video/mp4" />
-              <source src="/static/vid/video.webm" type="video/webm" />
+              <source src="./vid/video.mp4" type="video/mp4" />
+              <source src="./vid/video.webm" type="video/webm" />
               Your brownatser is not supported!
             </video>
           </div>
@@ -321,7 +321,7 @@ export default function natour() {
             <div className="story">
               <figure className="story__shape">
                 <img
-                  src="/static/images/nat-8.jpg"
+                  src="./images/nat-8.jpg"
                   alt="Person on a tour"
                   className="story__img"
                 />
@@ -345,7 +345,7 @@ export default function natour() {
             <div className="story">
               <figure className="story__shape">
                 <img
-                  src="/static/images/nat-9.jpg"
+                  src="./images/nat-9.jpg"
                   alt="Person on a tour"
                   className="story__img"
                 />
@@ -447,13 +447,13 @@ export default function natour() {
         <div className="footer-nat__logo-box">
           <picture className="footer-nat__logo">
             <source
-              srcSet="/static/images/logo-green-small-1x.png 1x, /static/images/logo-green-small-2x.png 2x"
+              srcSet="./images/logo-green-small-1x.png 1x, ./images/logo-green-small-2x.png 2x"
               media="(max-width: 37.5em)"
             />
             <img
-              srcSet="/static/images/logo-green-1x.png 1x, /static/images/logo-green-2x.png 2x"
+              srcSet="./images/logo-green-1x.png 1x, ./images/logo-green-2x.png 2x"
               alt="Full logo"
-              src="/static/images/logo-green-2x.png"
+              src="./images/logo-green-2x.png"
             />
           </picture>
         </div>

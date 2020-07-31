@@ -8,7 +8,7 @@ import { Switch, Route } from "react-router-dom";
 import App from "./App";
 
 /**TODO:
- * Single page application => hence only 1 route
+ * Single page landing page => hence only 1 route
  * add in page route
  */
 

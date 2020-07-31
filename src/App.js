@@ -12,12 +12,12 @@ import "./App.css";
 
 // import RouteNav from "./RouteNav";
 // import Login from "./Components/Login/Login";
-import Test from "./natour";
+import Landing from "./landing/landing";
 
 function App() {
   return (
     <div>
-      <Test />
+      <Landing />
       {/* <Navbar />
       <RouteNav />
       <Home />
